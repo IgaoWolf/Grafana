@@ -1,5 +1,3 @@
-# Grafana
-
 # Instalação Simplificada do Prometheus e Grafana
 
 Este guia fornece um passo a passo para instalar e configurar o Prometheus e o Grafana em um servidor Ubuntu. O Prometheus é um sistema de monitoramento e alerta, enquanto o Grafana é uma plataforma de visualização e análise de dados.
@@ -71,13 +69,14 @@ sudo vim /etc/grafana/grafana.ini
 
 Localize a seção [database] e ajuste as configurações para:
 
-
+```bash
 [database]
 type = mysql
 host = 127.0.0.1:3306
 name = grafana
 user = grafana
 password = grafana-passwd
+```
 
 6. Iniciando e Habilitando o Grafana
 
